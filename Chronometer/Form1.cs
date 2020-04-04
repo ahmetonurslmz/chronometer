@@ -49,8 +49,8 @@ namespace Chronometer
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int second = Int32.Parse(txtSecond.Text);
-            second += 1;
+            this.progressBarSecond.Increment(1);
+            int second = this.progressBarSecond.Value;
             if (second == 60)
             {
                 txtSecond.Text = 0.ToString();
@@ -63,7 +63,6 @@ namespace Chronometer
             else
             {
                txtSecond.Text = second.ToString();
-               this.progressBarSecond.Increment(1);
             }
         }
 

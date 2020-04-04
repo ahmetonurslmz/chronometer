@@ -95,7 +95,7 @@
             // 
             this.progressBarSecond.Location = new System.Drawing.Point(274, 42);
             this.progressBarSecond.MarqueeAnimationSpeed = 60;
-            this.progressBarSecond.Maximum = 56;
+            this.progressBarSecond.Maximum = 60;
             this.progressBarSecond.Name = "progressBarSecond";
             this.progressBarSecond.Size = new System.Drawing.Size(484, 31);
             this.progressBarSecond.TabIndex = 5;
