@@ -1,0 +1,9 @@
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\obj\Debug\Chronometer.csprojAssemblyReference.cache
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\obj\Debug\Chronometer.Form1.resources
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\obj\Debug\Chronometer.Properties.Resources.resources
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\obj\Debug\Chronometer.csproj.GenerateResource.cache
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\bin\Debug\Chronometer.exe.config
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\bin\Debug\Chronometer.exe
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\bin\Debug\Chronometer.pdb
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\obj\Debug\Chronometer.exe
+C:\Users\Casper\workspace\c#\Chronometer\Chronometer\obj\Debug\Chronometer.pdb

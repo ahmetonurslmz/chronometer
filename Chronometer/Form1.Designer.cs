@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblSecond = new System.Windows.Forms.Label();
             this.lblMinute = new System.Windows.Forms.Label();
             this.txtSecond = new System.Windows.Forms.TextBox();
             this.txtMinute = new System.Windows.Forms.TextBox();
-            this.prgressSecond = new System.Windows.Forms.ProgressBar();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBarSecond = new System.Windows.Forms.ProgressBar();
+            this.progressBarMinute = new System.Windows.Forms.ProgressBar();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnFinish = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lblSecond
@@ -86,19 +91,65 @@
             this.txtMinute.Text = "00";
             this.txtMinute.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // prgressSecond
+            // progressBarSecond
             // 
-            this.prgressSecond.Location = new System.Drawing.Point(274, 42);
-            this.prgressSecond.Name = "prgressSecond";
-            this.prgressSecond.Size = new System.Drawing.Size(484, 31);
-            this.prgressSecond.TabIndex = 5;
+            this.progressBarSecond.Location = new System.Drawing.Point(274, 42);
+            this.progressBarSecond.MarqueeAnimationSpeed = 60;
+            this.progressBarSecond.Maximum = 56;
+            this.progressBarSecond.Name = "progressBarSecond";
+            this.progressBarSecond.Size = new System.Drawing.Size(484, 31);
+            this.progressBarSecond.TabIndex = 5;
             // 
-            // progressBar1
+            // progressBarMinute
             // 
-            this.progressBar1.Location = new System.Drawing.Point(274, 94);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(484, 31);
-            this.progressBar1.TabIndex = 6;
+            this.progressBarMinute.Location = new System.Drawing.Point(274, 94);
+            this.progressBarMinute.Name = "progressBarMinute";
+            this.progressBarMinute.Size = new System.Drawing.Size(484, 31);
+            this.progressBarMinute.TabIndex = 6;
+            // 
+            // btnStart
+            // 
+            this.btnStart.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStart.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnStart.Location = new System.Drawing.Point(188, 146);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(108, 34);
+            this.btnStart.TabIndex = 7;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LawnGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(348, 146);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 34);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Pause";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnFinish
+            // 
+            this.btnFinish.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFinish.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnFinish.Location = new System.Drawing.Point(523, 146);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(108, 34);
+            this.btnFinish.TabIndex = 9;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = false;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -106,8 +157,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Chronometer.Properties.Resources.chasy_budilnik_vremya_4010;
             this.ClientSize = new System.Drawing.Size(800, 192);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.prgressSecond);
+            this.Controls.Add(this.btnFinish);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.progressBarMinute);
+            this.Controls.Add(this.progressBarSecond);
             this.Controls.Add(this.txtMinute);
             this.Controls.Add(this.txtSecond);
             this.Controls.Add(this.lblMinute);
@@ -125,8 +179,12 @@
         private System.Windows.Forms.Label lblMinute;
         private System.Windows.Forms.TextBox txtSecond;
         private System.Windows.Forms.TextBox txtMinute;
-        private System.Windows.Forms.ProgressBar prgressSecond;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBarSecond;
+        private System.Windows.Forms.ProgressBar progressBarMinute;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
